@@ -45,8 +45,76 @@ These are the limited options you can use for `media-format`
   <tr>
     <td>gallery</td>
     <td>Images</td>
-    <td>zoom(bool||{active:(_bool_), static:(_bool_)}), hover(_bool_), transition(<b>""</b>|<b>"slide"</b>|<b>"curtain"</b>), allowDescription(_bool_), cols</td>
+    <td>
+     zoom(<b>bool</b>|{active:(<b>bool</b>), static:(<b>bool</b>)})<br/>
+     hover(<b>bool</b>)<br/> 
+     transition(<b>""</b>|<b>"slide"</b>|<b>"curtain"</b>)<br/>
+     allowDescription(<b>bool</b>)<br/>
+     cols(<b>int</b>|<b>"scroll"</b>)
+    </td>
     <td>Loads up 1 or more images in a grid format.</td>
   </tr>
+ <tr>
+    <td>carousel</td>
+    <td>Images</td>
+    <td>
+     zoom(<b>bool</b>|{active:(<b>bool</b>), static:(<b>bool</b>)})<br/>
+     control(<b>""</b>|<b>"auto"</b>|<b>"manual"</b>)<br/> 
+     timeout(<b>int</b>)<br/>
+     allowDescription(<b>bool</b>)
+    </td>
+    <td>Loads up 1 or more images and makes a manual/auto carousel</td>
+  </tr>
+  <tr>
+    <td>stack</td>
+    <td>Images</td>
+    <td>
+     allowDescription(<b>bool</b>)
+    </td>
+    <td>Loads up 1 or more images and stacks it up</td>
+  </tr>
+  <tr>
+    <td>lightbox</td>
+    <td>Images</td>
+    <td>
+     allowDescription(<b>bool</b>)
+    </td>
+    <td>Loads up 1 or more images and makes a lightbox out of it.</td>
+  </tr>
+ <tr>
+    <td>background</td>
+    <td>Images/Videos</td>
+    <td>
+     multiple(<b>bool</b>)
+    </td>
+    <td>Loads up 1 or more images/videos and places it in the background</td>
+  </tr>
+  <tr>
+    <td>heroimage</td>
+    <td>Image</td>
+    <td>
+     Use <em>hero-url</em> attribute to load up image URL.
+    </td>
+    <td>Loads up 1 image and formats the text</td>
+  </tr>
+  <tr>
+    <td>video</td>
+    <td>Videos</td>
+    <td>
+     bar(<b>color</b>)&lt;string&gt;<br/>
+     skip(<b>seconds</b>)&lt;int&gt;<br/>
+     quality(<b>{quality:quality_url}</b>)&lt;object&gt;<br/>
+     subtitles(<b>{items:{lang:camption_url}, template:{size:font_size, bg:hex_color, bg-opacity:(0-1), color:hex_color, color-opacity:(0-1), family:font_family}}</b>)&lt;object&gt;<br/>
+    </td>
+    <td>Loads up a custom video player.</td>
+  </tr>
+  <tr>
+     <td>audio</td>
+     <td>Audio</td>
+     <td>
+      bar(<b>color</b>)&lt;string&gt;
+     </td>
+     <td>Load a custom audio player.</td>
+   </tr>
 </table>
 
