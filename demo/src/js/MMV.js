@@ -288,9 +288,6 @@ class MMV{
 					e.outerHTML = '<div class="bg-image"><video loop autoplay muted src="'+e.querySelector('source').src+'"></video></div>';
 				});
 			}
-			if(o.hasOwnProperty('transition')&&o['transition']){
-				
-			}
 		}else{
 			if(this.target.querySelector('img')){
 				if(this.target.querySelectorAll('img').length>1){
