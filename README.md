@@ -13,8 +13,8 @@ MMV, also known as Multi-Media Veiwer, which allow easy and flexable media viewi
   ```
 * CDN link
 ```html
-  <link href="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@main/src/css/MMV.min.css" rel="stylesheet"  crossorigin="anonymous"/>
-  <script src="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@main/src/js/MMV.min.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@0.0.1/src/css/MMV.min.css" rel="stylesheet"  crossorigin="anonymous"/>
+  <script src="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@0.0.1/src/js/MMV.min.js" crossorigin="anonymous"></script>
 ``` 
 
 ### Setup
@@ -50,7 +50,8 @@ These are the limited options you can use for `media-format`
      hover(<b>bool</b>)<br/> 
      transition(<b>""</b>|<b>"slide"</b>|<b>"curtain"</b>)<br/>
      allowDescription(<b>bool</b>)<br/>
-     cols(<b>int</b>|<b>"scroll"</b>)
+     cols(<b>int</b>|<b>"scroll"</b>)<br/>
+     Use <em>img-desc</em> to give a description
     </td>
     <td>Loads up 1 or more images in a grid format.</td>
   </tr>
@@ -61,7 +62,8 @@ These are the limited options you can use for `media-format`
      zoom(<b>bool</b>|{active:(<b>bool</b>), static:(<b>bool</b>)})<br/>
      control(<b>""</b>|<b>"auto"</b>|<b>"manual"</b>)<br/> 
      timeout(<b>int</b>)<br/>
-     allowDescription(<b>bool</b>)
+     allowDescription(<b>bool</b>)<br/>
+     Use <em>img-desc</em> to give a description
     </td>
     <td>Loads up 1 or more images and makes a manual/auto carousel</td>
   </tr>
@@ -69,7 +71,8 @@ These are the limited options you can use for `media-format`
     <td>stack</td>
     <td>Images</td>
     <td>
-     allowDescription(<b>bool</b>)
+     allowDescription(<b>bool</b>)<br/>
+     Use <em>img-desc</em> to give a description
     </td>
     <td>Loads up 1 or more images and stacks it up</td>
   </tr>
@@ -77,7 +80,8 @@ These are the limited options you can use for `media-format`
     <td>lightbox</td>
     <td>Images</td>
     <td>
-     allowDescription(<b>bool</b>)
+     allowDescription(<b>bool</b>)<br/>
+     Use <em>img-desc</em> to give a description
     </td>
     <td>Loads up 1 or more images and makes a lightbox out of it.</td>
   </tr>
@@ -118,3 +122,22 @@ These are the limited options you can use for `media-format`
    </tr>
 </table>
 
+### activating the target
+After you initalize the program you would have to run a function that is based on the [img-type](#valid-media-format)
+```js
+//We will be using "Gallery" type for this example w/ configuration
+iv.gallery({
+   allowDescription:true, 
+   cols:'scroll', 
+   zoom:{active:true,static:false}, 
+   hover:false
+});
+//zoom can be "zoom:true/false" or an object format
+
+./*
+- Will show description
+- grid size is 1 row with scroll
+- zoom is active and static is off
+- hover affect is off
+*/
+```
