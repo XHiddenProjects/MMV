@@ -1,6 +1,6 @@
 /*
 @name: Multi-Media Viewer
-@version: 0.0.2
+@version: 0.0.3
 @author: XHiddenProjects
 @module-type: standard
 @website: https://github.com/xhiddenprojects
@@ -20,6 +20,9 @@
 html,body{
     width: 100%;
     height: 100%;
+}
+[mmv-status] .fade:not(.show){
+    opacity: 1!important;
 }
 /*Gallery*/
 [mmv-status][img-type="gallery"]:not([scrollable]){
