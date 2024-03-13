@@ -18,7 +18,7 @@ MMV, also known as Multi-Media Veiwer, which allow easy and flexable media viewi
 ``` 
 
 ### Setup
-To start off with loading the viewers you have to make a container for the media are going to place.
+To setup the library, you would have to follow the steps below... 
 
 **Note: (Some Images, Videos/Audios) can only contain 1 item in it!**
 
