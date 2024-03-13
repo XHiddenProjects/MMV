@@ -13,8 +13,8 @@ MMV, also known as Multi-Media Veiwer, which allow easy and flexable media viewi
   ```
 * CDN link
 ```html
-  <link href="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@0.0.1/src/css/MMV.min.css" rel="stylesheet"  crossorigin="anonymous"/>
-  <script src="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@0.0.1/src/js/MMV.min.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@0.0.2/src/css/MMV.min.css" rel="stylesheet"  crossorigin="anonymous"/>
+  <script src="https://cdn.jsdelivr.net/gh/XHiddenProjects/MMV@0.0.2/src/js/MMV.min.js" crossorigin="anonymous"></script>
 ``` 
 
 ### Setup
