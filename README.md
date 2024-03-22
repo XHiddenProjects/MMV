@@ -108,7 +108,7 @@ These are the limited options you can use for `media-format`
      bar(<b>color</b>)&lt;string&gt;<br/>
      skip(<b>seconds</b>)&lt;int&gt;<br/>
      quality(<b>{quality:quality_url}</b>)&lt;object&gt;<br/>
-     subtitles(<b>{items:{lang:camption_url}, template:{size:font_size, bg:hex_color, bg-opacity:(0-1), color:hex_color, color-opacity:(0-1), family:font_family}}</b>)&lt;object&gt;<br/>
+     subtitles(<b>{items:{lang:caption_url}, template:{size:font_size, bg:hex_color, bg-opacity:(0-1), color:hex_color, color-opacity:(0-1), family:font_family}}</b>)&lt;object&gt;<br/>
     </td>
     <td>Loads up a custom video player.</td>
   </tr>
