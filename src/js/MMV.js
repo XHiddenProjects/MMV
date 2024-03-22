@@ -1,6 +1,6 @@
 /*
 @name: Multi-Media Viewer
-@version: 0.0.3
+@version: 0.0.4
 @author: XHiddenProjects
 @module-type: standard
 @website: https://github.com/xhiddenprojects
@@ -47,6 +47,8 @@ class MMV{
 				this.target.style.gridTemplateColumns = 'repeat('+parseInt(o['cols'])+', 1fr)';
 			}else if(o['cols']==='scroll'){
 				this.target.setAttribute('scrollable',true);
+			}else{
+				this.target.style.gridTemplateColumns = 'repeat('+parseInt(o['cols'])+', 1fr)';
 			}
 			
 		}
